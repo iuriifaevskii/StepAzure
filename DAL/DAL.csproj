@@ -48,8 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Cart.cs" />
+    <Compile Include="Entities\CartItem.cs" />
     <Compile Include="Entities\EfContext.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Migrations\201701171657223_Create Database.cs" />
     <Compile Include="Migrations\201701171657223_Create Database.Designer.cs">
       <DependentUpon>201701171657223_Create Database.cs</DependentUpon>
