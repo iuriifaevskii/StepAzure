@@ -53,9 +53,14 @@
     <Compile Include="Entities\EfContext.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Wish.cs" />
     <Compile Include="Migrations\201701171657223_Create Database.cs" />
     <Compile Include="Migrations\201701171657223_Create Database.Designer.cs">
       <DependentUpon>201701171657223_Create Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701181744272_CreateWishTable.cs" />
+    <Compile Include="Migrations\201701181744272_CreateWishTable.Designer.cs">
+      <DependentUpon>201701181744272_CreateWishTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +68,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701171657223_Create Database.resx">
       <DependentUpon>201701171657223_Create Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701181744272_CreateWishTable.resx">
+      <DependentUpon>201701181744272_CreateWishTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

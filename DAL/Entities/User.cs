@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    class User
+    public class User
     {
+
         [Key]
         public int Id { get; set; }
 
@@ -17,5 +18,8 @@ namespace DAL.Entities
 
         [Required]
         public string Password { get; set; }
+
+        public virtual ICollection<Wish> Wishes { get; set; }
+
     }
 }

@@ -9,10 +9,13 @@ namespace DAL.Entities
 {
    public class Product
     {
-       [Key]
+        [Key]
         public int Id { get; set; }
        
-       [Required, StringLength(255)]
+        [Required, StringLength(255)]
         public string Name { get; set; }
+
+        public virtual ICollection<Wish> Wishes { get; set; }
+
     }
 }

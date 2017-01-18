@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    class CartItem
+    public class CartItem
     {
         [Key]
         public int Id { get; set; }
