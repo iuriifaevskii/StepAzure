@@ -11,6 +11,7 @@ namespace DAL.Abstract
     {
         IQueryable<User> GetAllUsers();
         User CreateUser(string email, string password);
+        Task<User> CreateUserAsync(string email, string password);
         int CountUsers { get; }
     }
 }

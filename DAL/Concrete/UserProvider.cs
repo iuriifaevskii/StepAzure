@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Entities;
+using System.Diagnostics;
+using System.Threading;
 
 namespace DAL.Concrete
 {
@@ -34,6 +36,11 @@ namespace DAL.Concrete
             mContext.Users.Add(user);
             mContext.SaveChanges();
             return user;
+        }
+
+        public Task<User> CreateUserAsync(string email, string password)
+        {
+            return Task.Run(() => CreateUser(email,password));
         }
 
         public IQueryable<User> GetAllUsers()

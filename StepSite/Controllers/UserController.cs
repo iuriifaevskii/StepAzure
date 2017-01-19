@@ -3,7 +3,10 @@ using DAL.Concrete;
 using DAL.Entities;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -26,17 +29,18 @@ namespace StepSite.Controllers
         }
         public ActionResult Create()
         {
-            
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(User model)
+        public async Task<ActionResult> Create(User model)
         {
             if(ModelState.IsValid)
             {
-                User createUser = mUserProvider.CreateUser(model.Username, model.Password);
+                Debug.WriteLine("ASP pool ID" + Thread.CurrentThread.ManagedThreadId.ToString());
+                User createUser = await mUserProvider.CreateUserAsync(model.Username, model.Password);
+                Debug.WriteLine("ASP pool ID" + Thread.CurrentThread.ManagedThreadId.ToString());
                 return RedirectToAction("Index");
             }
             return View(model);
