@@ -15,6 +15,15 @@ namespace DAL.Concrete
         {
             mContext = new EfContext();
         }
+
+        public int CountUsers
+        {
+            get
+            {
+                return mContext.Users.Count();
+            }
+        }
+
         public User CreateUser(string email, string password)
         {
             User user = new User
@@ -25,6 +34,11 @@ namespace DAL.Concrete
             mContext.Users.Add(user);
             mContext.SaveChanges();
             return user;
+        }
+
+        public IQueryable<User> GetAllUsers()
+        {
+            return mContext.Users;
         }
     }
 }
