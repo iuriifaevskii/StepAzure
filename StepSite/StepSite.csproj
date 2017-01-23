@@ -234,12 +234,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Cart\Index.cshtml" />
-=======
     <Content Include="Views\User\Create.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
->>>>>>> c21f9b55fe1a2cc3fae3a068b96563554a528dac
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
