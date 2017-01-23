@@ -28,6 +28,7 @@ namespace DAL.Concrete
 
         public User CreateUser(string email, string password)
         {
+            Debug.WriteLine("Provider pool ID" + Thread.CurrentThread.ManagedThreadId.ToString());
             User user = new User
             {
                 Username=email,

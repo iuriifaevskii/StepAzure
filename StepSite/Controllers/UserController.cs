@@ -40,7 +40,6 @@ namespace StepSite.Controllers
             {
                 Debug.WriteLine("ASP pool ID" + Thread.CurrentThread.ManagedThreadId.ToString());
                 User createUser = await mUserProvider.CreateUserAsync(model.Username, model.Password);
-                Debug.WriteLine("ASP pool ID" + Thread.CurrentThread.ManagedThreadId.ToString());
                 return RedirectToAction("Index");
             }
             return View(model);
