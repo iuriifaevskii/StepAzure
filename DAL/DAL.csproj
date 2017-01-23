@@ -48,10 +48,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IUserProvider.cs" />
+    <Compile Include="Concrete\UserProvider.cs" />
     <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\CartItem.cs" />
     <Compile Include="Entities\EfContext.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Wish.cs" />
     <Compile Include="Migrations\201701171657223_Create Database.cs" />
@@ -62,8 +65,17 @@
     <Compile Include="Migrations\201701181744272_CreateWishTable.Designer.cs">
       <DependentUpon>201701181744272_CreateWishTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701181829124_UpdateCartItem.cs" />
+    <Compile Include="Migrations\201701181829124_UpdateCartItem.Designer.cs">
+      <DependentUpon>201701181829124_UpdateCartItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701231828057_addRoleTable.cs" />
+    <Compile Include="Migrations\201701231828057_addRoleTable.Designer.cs">
+      <DependentUpon>201701231828057_addRoleTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\WishViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701171657223_Create Database.resx">
@@ -71,6 +83,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701181744272_CreateWishTable.resx">
       <DependentUpon>201701181744272_CreateWishTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701181829124_UpdateCartItem.resx">
+      <DependentUpon>201701181829124_UpdateCartItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701231828057_addRoleTable.resx">
+      <DependentUpon>201701231828057_addRoleTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
