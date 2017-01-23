@@ -14,6 +14,8 @@ namespace DAL.Entities
 
         public int Quantity { get; set; }
 
+        public int CartId { get; set; }
+
         public virtual Cart Cart { get; set; }
     }
 }

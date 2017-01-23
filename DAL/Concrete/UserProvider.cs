@@ -1,4 +1,10 @@
 ﻿using DAL.Abstract;
+using DAL.Entities;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +24,7 @@ namespace DAL.Concrete
             mContext = new EfContext();
         }
 
+        
         public int CountUsers
         {
             get

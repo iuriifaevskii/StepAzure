@@ -9,7 +9,10 @@ namespace DAL.Entities
 {
     public class User
     {
-
+        public User() 
+        {
+            this.Roles = new HashSet<Role>();
+        }
         [Key]
         public int Id { get; set; }
 
@@ -22,6 +25,8 @@ namespace DAL.Entities
         public string PasswordSalt { get; set; }
 
         public virtual ICollection<Wish> Wishes { get; set; }
+        public int RoleId { get; set; }
+        public virtual ICollection<Role> Roles { get; set; }
 
     }
 }

@@ -9,8 +9,9 @@ namespace DAL.Abstract
 {
     public interface IUserProvider
     {
-        IQueryable<User> GetAllUsers();
         User CreateUser(string email, string password);
+
+        IQueryable<User> GetAllUsers();
         Task<User> CreateUserAsync(string email, string password);
         int CountUsers { get; }
     }
