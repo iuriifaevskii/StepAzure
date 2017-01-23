@@ -16,8 +16,10 @@ namespace DAL.Entities
         [Required]
         public string Username { get; set; }
 
-        [Required]
+        [Required, StringLength(maximumLength: 200)]
         public string Password { get; set; }
+        [Required, StringLength(maximumLength: 200)]
+        public string PasswordSalt { get; set; }
 
         public virtual ICollection<Wish> Wishes { get; set; }
 
