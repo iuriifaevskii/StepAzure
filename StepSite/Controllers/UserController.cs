@@ -36,7 +36,8 @@ namespace StepSite.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create(User model)
         {
-            if(ModelState.IsValid)
+            model.PasswordSalt = "safasf";
+            if (ModelState.IsValid)
             {
                 Debug.WriteLine("ASP pool ID" + Thread.CurrentThread.ManagedThreadId.ToString());
                 User createUser = await mUserProvider.CreateUserAsync(model.Username, model.Password);

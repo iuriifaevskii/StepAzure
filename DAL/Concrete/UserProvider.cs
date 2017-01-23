@@ -38,8 +38,9 @@ namespace DAL.Concrete
             Debug.WriteLine("Provider pool ID" + Thread.CurrentThread.ManagedThreadId.ToString());
             User user = new User
             {
-                Username=email,
-                Password=password
+                Username = email,
+                Password = password,
+                PasswordSalt = "hello"
             };
             mContext.Users.Add(user);
             mContext.SaveChanges();

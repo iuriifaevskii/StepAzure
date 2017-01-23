@@ -73,6 +73,14 @@
     <Compile Include="Migrations\201701231828057_addRoleTable.Designer.cs">
       <DependentUpon>201701231828057_addRoleTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701232113288_Update User table.cs" />
+    <Compile Include="Migrations\201701232113288_Update User table.Designer.cs">
+      <DependentUpon>201701232113288_Update User table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701232118267_Bad dataBase User and Role.cs" />
+    <Compile Include="Migrations\201701232118267_Bad dataBase User and Role.Designer.cs">
+      <DependentUpon>201701232118267_Bad dataBase User and Role.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\WishViewModel.cs" />
@@ -89,6 +97,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701231828057_addRoleTable.resx">
       <DependentUpon>201701231828057_addRoleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701232113288_Update User table.resx">
+      <DependentUpon>201701232113288_Update User table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701232118267_Bad dataBase User and Role.resx">
+      <DependentUpon>201701232118267_Bad dataBase User and Role.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -25,7 +25,6 @@ namespace DAL.Entities
         public string PasswordSalt { get; set; }
 
         public virtual ICollection<Wish> Wishes { get; set; }
-        public int RoleId { get; set; }
         public virtual ICollection<Role> Roles { get; set; }
 
     }

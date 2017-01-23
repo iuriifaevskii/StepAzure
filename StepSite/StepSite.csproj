@@ -167,11 +167,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201701231826493_addRoleTable.cs" />
-    <Compile Include="Migrations\201701231826493_addRoleTable.Designer.cs">
-      <DependentUpon>201701231826493_addRoleTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -253,11 +248,6 @@
       <Project>{5f821b78-9f96-4d3d-9f5a-96fde978ed81}</Project>
       <Name>DAL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201701231826493_addRoleTable.resx">
-      <DependentUpon>201701231826493_addRoleTable.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

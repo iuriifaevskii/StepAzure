@@ -10,7 +10,7 @@ namespace DAL.Entities
     public class EfContext:DbContext
     {
         public EfContext()
-            : base("MyAzureDb")
+            : base("MyVovaAzureDb")
         {
                 
         }
